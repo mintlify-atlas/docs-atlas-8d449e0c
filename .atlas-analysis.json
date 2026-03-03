@@ -1,0 +1,99 @@
+{
+  "projectType": "saas",
+  "projectName": "Estoque",
+  "projectDescription": "A complete web application for inventory management with user authentication, product tracking, and category organization",
+  "theme": "almond",
+  "primaryColor": "#2563eb",
+  "lightColor": "#60a5fa",
+  "darkColor": "#1e40af",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["introduction", "quickstart", "installation"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/authentication",
+              "features/products",
+              "features/categories",
+              "features/users"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/database",
+              "guides/sessions",
+              "guides/deployment"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Models",
+            "pages": [
+              "api/models/user",
+              "api/models/product",
+              "api/models/category"
+            ]
+          },
+          {
+            "group": "Controllers",
+            "pages": [
+              "api/controllers/auth",
+              "api/controllers/product",
+              "api/controllers/category",
+              "api/controllers/user"
+            ]
+          },
+          {
+            "group": "Routes",
+            "pages": [
+              "api/routes/overview",
+              "api/routes/authentication",
+              "api/routes/products",
+              "api/routes/categories",
+              "api/routes/users"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "User authentication with bcrypt password hashing",
+    "Complete CRUD operations for products, categories, and users",
+    "Session-based access control with express-session",
+    "SQLite database with Sequelize ORM",
+    "Server-side rendering with EJS templates",
+    "RESTful routing with method-override for PUT/DELETE"
+  ],
+  "publicApiSurface": [
+    "GET /entrar - Login page",
+    "POST /entrar - Authenticate user",
+    "GET /registrar - Registration page",
+    "POST /registrar - Create new account",
+    "POST /sair - Logout",
+    "GET / - Home page (protected)",
+    "GET /produtos - List all products (protected)",
+    "POST /produtos - Create product (protected)",
+    "GET /produtos/:id - View product details (protected)",
+    "PUT /produtos/:id - Update product (protected)",
+    "DELETE /produtos/:id - Delete product (protected)",
+    "GET /categorias - List all categories (protected)",
+    "POST /categorias - Create category (protected)",
+    "PUT /categorias/:id - Update category (protected)",
+    "DELETE /categorias/:id - Delete category (protected)",
+    "GET /usuarios - List all users (protected)",
+    "PUT /usuarios/:id - Update user (protected)",
+    "DELETE /usuarios/:id - Delete user (protected)"
+  ]
+}
